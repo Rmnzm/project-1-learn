@@ -1,17 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
   <title>Test</title>
 </head>
 <body>
-  <ul>
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
-    <li>4</li>
-  </ul>
+  <h2>Создание списка</h2>
+  <hr>
+  <label for="thing">Создайте задачу</label>
+  <br>
+  <input type="text" id="thing">
+  <br>
+  <label for="time">Время выполнения</label><br>
+  <input type="number" min='1' id='time'>
+  <br>
+  <label for="hard">Важность</label><br>
+  <select name="" id="hard">
+    <option value="easy">легко</option>
+    <option value="normal">нормально</option>
+    <option value="hard">сложно</option>
+  </select>
+  <br><br>
+  <button id='create'>Создать дело</button>
+  <p>Мои покупки на сегодня:</p>
+  <ol id='list'></ol>
+  <script src='jquery-3.4.1.min.js'></script>
+  <script src='JS/my.js'></script>
 </body>
 </html>
